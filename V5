@@ -28,7 +28,7 @@ local OrionLib = {
 local Icons = {}
 
 local Success, Response = pcall(function()
-	Icons = HttpService:JSONDecode(game:HttpGetAsync("https://raw.githubusercontent.com/CodyPlay32/MODULOS/main/icons.json")).icons
+	Icons = HttpService:JSONDecode(game:HttpGetAsync("https://raw.githubusercontent.com/CodyPlay32/MODULOS/main/icons.json?token=GHSAT0AAAAAAB67UNYJQ5OAWREJRI3XOXKCY7ZGZDQ")).icons
 end)
 
 if not Success then

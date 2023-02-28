@@ -447,7 +447,7 @@ function OrionLib:MakeNotification(NotificationConfig)
 end    
 
 OrionLib:MakeNotification({
-    Name = "Bienvenido",
+    Name = "Notificación",
     Content = "Menú cargado con éxito, disfruta!",
     Image = "rbxassetid://7733666258",
     Time = 5
@@ -640,7 +640,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		MainWindow.Visible = false
 		UIHidden = true
 		OrionLib:MakeNotification({
-			Name = "Adiós",
+			Name = "Notificación",
 			Content = "Menú cerrado, hasta pronto!",
 			Image = "rbxassetid://7733666258",
 			Time = 5

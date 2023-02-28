@@ -642,6 +642,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		OrionLib:MakeNotification({
 			Name = "Notificación",
 			Content = "Menú cerrado, hasta pronto!",
+			Image = "rbxassetid://7733666258",
 			Time = 5
 		})
 		WindowConfig.CloseCallback()

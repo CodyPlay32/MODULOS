@@ -446,20 +446,12 @@ function OrionLib:MakeNotification(NotificationConfig)
 	end)
 end    
 
-function OrionLib:Init()
-	if OrionLib.SaveCfg then	
-		pcall(function()
-			if isfile(OrionLib.Folder .. "/" .. game.GameId .. ".txt") then
-				LoadCfg(readfile(OrionLib.Folder .. "/" .. game.GameId .. ".txt"))
-				OrionLib:MakeNotification({
-					Name = "Configuration",
-					Content = "Auto-loaded configuration for the game " .. game.GameId .. ".",
-					Time = 5
-				})
-			end
-		end)		
-	end	
-end	
+OrionLib:MakeNotification({
+    Name = "Notificación",
+    Content = "Bienvenido al menú de scripts!",
+    Image = "rbxassetid://7733666258",
+    Time = 5
+})
 
 function OrionLib:MakeWindow(WindowConfig)
 	local FirstTab = true

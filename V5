@@ -446,13 +446,6 @@ function OrionLib:MakeNotification(NotificationConfig)
 	end)
 end    
 
-OrionLib:MakeNotification({
-    Name = "Notificación",
-    Content = "Menú cargado con éxito, disfruta!",
-    Image = "rbxassetid://7733666258",
-    Time = 5
-})
-
 function OrionLib:MakeWindow(WindowConfig)
 	local FirstTab = true
 	local Minimized = false

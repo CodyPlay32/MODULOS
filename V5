@@ -1350,7 +1350,7 @@ function OrionLib:MakeWindow(WindowConfig)
 			function ElementFunction:AddTextbox(TextboxConfig)
 				TextboxConfig = TextboxConfig or {}
 				TextboxConfig.Name = TextboxConfig.Name or "Textbox"
-				TextboxConfig.Default = TextboxConfig.Default or "Introducir"
+				TextboxConfig.Default = TextboxConfig.Default or ""
 				TextboxConfig.TextDisappear = TextboxConfig.TextDisappear or false
 				TextboxConfig.Callback = TextboxConfig.Callback or function() end
 
@@ -1403,7 +1403,7 @@ function OrionLib:MakeWindow(WindowConfig)
 				AddConnection(TextboxActual.FocusLost, function()
 					TextboxConfig.Callback(TextboxActual.Text)
 					if TextboxConfig.TextDisappear then
-						TextboxActual.Text = ""
+						TextboxActual.Text = "Introducir"
 					end	
 				end)
 

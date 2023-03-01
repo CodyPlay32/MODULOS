@@ -634,7 +634,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		UIHidden = true
 		OrionLib:MakeNotification({
 			Name = "Notificación",
-			Content = "Menú cerrado, hasta pronto!",
+			Content = "Menú cerrado, hasta pronto! 💥",
 			Image = "rbxassetid://7733666258",
 			Time = 5
 		})
